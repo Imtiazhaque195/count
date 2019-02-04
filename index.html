@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>user count</title>
+   </head>
+   
+   <script src= "/socket.io/socket.io.js"></script>
+
+   <script>
+   var socket= io();
+   socket.on('broadcast',function(data) {
+         document.body.innerHTML = '';
+         document.write(data.description);
+      });
+   </script>
+   <body>user count </body>
+
+      
+  
+</html>
